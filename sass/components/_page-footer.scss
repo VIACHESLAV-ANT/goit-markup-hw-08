@@ -1,0 +1,108 @@
+.footer {
+  background-color: var(--bgc-footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.opis {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.contaсts__footer {
+  @extend %list;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  &--adress {
+    color: var(--white-color);
+  }
+}
+
+.contacts__item {
+  margin-top: 9px;
+}
+
+.contacts__item--adress {
+  margin-top: 20px;
+}
+
+.container--display {
+  align-items: baseline;
+  display: flex;
+}
+
+.company-link__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.company-link__list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.company-link__item {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.company-link__ref {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--acent-color);
+  }
+}
+
+.company-link__icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__main-data {
+  margin-right: 70px;
+  flex-grow: 1;
+}
+
+.company-link {
+  margin-right: 93px;
+}
+
+.contacts {
+  @extend %list;
+}

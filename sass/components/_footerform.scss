@@ -1,0 +1,72 @@
+.footerform__title {
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.foterform__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: rgba(33, 150, 243, 0);
+  padding-left: 16px;
+  cursor: pointer;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 125%;
+    align-items: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+.footerform__button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 188%;
+  letter-spacing: 0.06em;
+  padding-right: 33px;
+  color: #ffffff;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 28px;
+    content: " ";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/iconsend.svg);
+    cursor: pointer;
+  }
+}
+
+.foterform__box {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+}

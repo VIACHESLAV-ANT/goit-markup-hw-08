@@ -1,0 +1,121 @@
+.portfolio__button {
+  color: var(--primary-text-color);
+  background-color: var(--bgc-color);
+  cursor: pointer;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 0px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--acent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.portfolio__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.galery {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.galery__link {
+  @extend %list;
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.galery__title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.galery__text {
+  color: var(--second-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  margin-top: 4px;
+}
+
+.galery__img {
+  position: relative;
+  overflow: hidden;
+  display: block;
+
+  &--block {
+    display: block;
+  }
+}
+
+.galery__img-text {
+  position: absolute;
+  width: 100%;
+  height: 294px;
+  background-color: var(--acent-color);
+  top: 0;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+
+  .galery__link:hover &,
+  .galery__link:focus & {
+    opacity: 0.9;
+    transform: translateY(0%);
+  }
+}
+
+.portfolio {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+}
+
+.galery__box {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
