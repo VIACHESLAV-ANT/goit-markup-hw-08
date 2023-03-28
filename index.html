@@ -20,7 +20,10 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+
     <!-- Шапка сайта -->
+
+
     <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo"
@@ -28,7 +31,17 @@
           <span class="logo__black">Studio</span>
         </a>
         <nav>
-          <ul class="navi">
+
+
+          <button class="menu" type="button">
+            <svg class="color" width="40" height="40">
+              <use class="color" href = "./images/menu.svg#menu"></use>
+              <!-- <use class="color" href = "./images/menu.svg#close"></use> -->
+            </svg>
+          </button>
+
+
+          <ul class="navi navi--mobile">
             <li class="navi__item">
               <a href="./index.html" class="navi__link navi__link--active"
                 >Студия</a
@@ -42,7 +55,9 @@
             </li>
           </ul>
         </nav>
-        <ul class="contaсts">
+
+
+        <ul class="contaсts contaсts--mobile">
           <li class="contaсts__item">
             <a href="" class="contaсts__link">
               <svg class="contaсts__icon">
@@ -178,7 +193,7 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="person">
-              <img src="./images/img2.1.jpg" alt="Фото мужчини" width="270" />
+              <img src="./images/img2.1.jpg" alt="Фото мужчини" class="person__images" />
               <div class="person__container">
                 <h3 class="person__title">Игорь Демьяненко</h3>
                 <p class="person__text">Product Designer</p>
@@ -215,7 +230,7 @@
               </div>
             </li>
             <li class="person">
-              <img src="./images/img2.2.jpg" alt="Фото женшини" width="270" />
+              <img src="./images/img2.2.jpg" alt="Фото женшини" class="person__images" />
               <div class="person__container">
                 <h3 class="person__title">Ольга Репина</h3>
                 <p class="person__text">Frontend Developer</p>
@@ -252,7 +267,7 @@
               </div>
             </li>
             <li class="person">
-              <img src="./images/img2.3.jpg" alt="Фото мужчини" width="270" />
+              <img src="./images/img2.3.jpg" alt="Фото мужчини" class="person__images" />
               <div class="person__container">
                 <h3 class="person__title">Николай Тарасов</h3>
                 <p class="person__text">Marketing</p>
@@ -289,7 +304,7 @@
               </div>
             </li>
             <li class="person">
-              <img src="./images/img2.4.jpg" alt="Фото мужчини" width="270" />
+              <img src="./images/img2.4.jpg" alt="Фото мужчини" class="person__images" />
               <div class="person__container">
                 <h3 class="person__title">Михаил Ермаков</h3>
                 <p class="person__text">UI Designer</p>
@@ -372,7 +387,7 @@
 
 
 
-      <div class="backdrop is-hidden" data-modal>
+      <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="button__close" data-modal-close></button>
           <form class="form js-speaker-form" autocomplete="off">
@@ -438,11 +453,11 @@
           </form>
         </div>
       </div>
-    </main>
+    </main> -->
 
 
-    <footer class="footer">
-      <div class="container container--display">
+    <footer class="hg=footer">
+      <!-- <div class="container container--display">
         <div class="footer__main-data">
           <a href="./" class="logo"
             >Web<span class="logo__white">Studio</span></a
@@ -501,17 +516,16 @@
               placeholder="E-mail"
               class="foterform__input"
             />
-            <!-- <label for="mail" class="FooterForm-text">E-mail</label> -->
             <button type="submit" class="footerform__button">
               Подписаться
             </button>
           </form>
         </div>
-      </div>
+      </div> -->
     </footer>
 
 
-    <script src="./modal.js"></script>
+    <!-- <script src="./modal.js"></script>
     <script>
       (() => {
         document
@@ -526,7 +540,7 @@
             e.currentTarget.reset();
           });
       })();
-    </script>
+    </script> -->
 
     
   </body>

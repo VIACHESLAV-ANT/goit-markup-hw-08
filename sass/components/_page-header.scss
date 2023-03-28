@@ -1,21 +1,65 @@
+.menu{
+  @media screen and (max-width: 768px) {
+  display: block;
+  border: 0;
+  padding: 0;
+  background-color: white;
+  margin: 10px 0px;
+  }
+  @media screen and (min-width: 768px) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+}
+
+.navi--mobile, .contaсts--mobile{
+  @media screen and (max-width: 767px) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+}
+
 .header {
+  @media screen and (min-width: 480px) {
+  // position: relative;
+  // display: flex;
+  }
+  @media screen and (min-width: 1200px) {
   border-bottom: 1px solid #ececec;
+  }
 }
 
 .header__container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: space-between;
   display: flex;
 }
 
 .navi {
+  @media screen and (min-width: 768px) {
   display: flex;
+}
 }
 
 .navi__link {
+  @media screen and (min-width: 768px) {
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -34,6 +78,7 @@
     color: var(--acent-color);
   }
 
+
   &--active::after {
     display: inline-block;
     position: absolute;
@@ -46,10 +91,17 @@
     left: 0;
   }
 }
+}
+
 
 .contaсts {
+  margin-left: 84px;
+  margin-top: auto;
+  margin-bottom: auto;
+  @media screen and (min-width: 1200px) {
   display: flex;
   margin-left: auto;
+}
 }
 
 .contaсts__item:not(:last-child) {
@@ -61,17 +113,21 @@
 }
 
 .contaсts__link {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
   @extend %list;
   color: var(--second-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
+  display: inline-flex;
+  @media screen and (min-width: 1200px) {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
-  display: inline-flex;
-
+  }
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -81,6 +137,7 @@
 }
 
 .contaсts__icon {
+  @media screen and (min-width: 768px) {
   width: 16px;
   height: 16px;
   fill: var(--second-text-color);
@@ -93,13 +150,25 @@
     fill: var(--acent-color);
   }
 }
+}
 
 .contaсts__item {
   display: flex;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+
+}
+&:last-child{
+  @media screen and (max-width: 1199px) {
+  margin-top: 10px;
+}
+}
 }
 
 .navi__item {
+  @media screen and (min-width: 768px) {
   display: flex;
   position: relative;
+}
 }

@@ -3,8 +3,13 @@
 }
 .team {
   @extend %list;
+  @media screen and (max-width: 768px){
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1200px){
   display: flex;
   margin-top: 50px;
+  }
 }
 
 .person__title {
@@ -37,7 +42,21 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   &:not(:last-child) {
+    @media screen and (max-width: 769px){
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px){
     margin-right: 30px;
+    }
+  }
+}
+
+.person__images{
+  @media screen and (min-width: 480px){
+  width: 450px;
+  }
+  @media screen and (min-width: 1200px){
+  max-width: 270px; 
   }
 }
 
