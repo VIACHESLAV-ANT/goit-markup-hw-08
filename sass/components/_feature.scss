@@ -1,8 +1,23 @@
 .feature {
   @extend %list;
-  // display: flex;
+  @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-
+.feature__item{
+  @media screen and (min-width: 768px) {
+  max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+    }
+}
+.feature__item:not(:nth-child(2n)){
+  @media screen and (min-width: 768px) {
+  margin-right: 30px;
+  }
+}
 .feature__item:not(:last-child) {
   @media screen and (min-width: 1200px) {
   margin-right: 30px;
@@ -24,7 +39,7 @@
 }
 
 .feature__title {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
     }
   font-weight: 700;
@@ -35,9 +50,15 @@
 .feature__text {
   color: var(--second-text-color);
   line-height: 1.71;
-
   margin-top: 10px;
+  &:not(:last-child){
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
 }
+
+
 
 .feature__block {
   height: 120px;

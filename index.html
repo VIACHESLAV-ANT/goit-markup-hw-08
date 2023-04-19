@@ -34,8 +34,8 @@
 
 
           <button class="menu" type="button">
-            <svg class="color" width="40" height="40">
-              <use class="color" href = "./images/menu.svg#menu"></use>
+            <svg width="40" height="40">
+              <use href = "./images/menu.svg#menu"></use>
               <!-- <use class="color" href = "./images/menu.svg#close"></use> -->
             </svg>
           </button>
@@ -156,8 +156,13 @@
           <ul class="work">
             <li class="work__item">
               <img
+              srcset="
+                ./images/work/work1/img.jpg 1x,
+                ./images/work/work1/img@2x.jpg 2x,
+                ./images/work/work1/img@3x.jpg 3x,
+                "
                 class="work__images"
-                src="./images/img1.1.jpg"
+                src="./images/work/work1/img.jpg"
                 alt="робота з компютером"
                 width="370"
               />
@@ -165,8 +170,13 @@
             </li>
             <li class="work__item">
               <img
+              srcset="
+              ./images/work/work2/img.jpg 1x,
+              ./images/work/work2/img@2x.jpg 2x,
+              ./images/work/work2/img@3x.jpg 3x,
+              "
                 class="work__images"
-                src="./images/img1.2.jpg"
+                src="./images/work/work2/img.jpg"
                 alt="робота з телефоном"
                 width="370"
               />
@@ -174,8 +184,13 @@
             </li>
             <li class="work__item">
               <img
+              srcset="
+              ./images/work/work3/img.jpg 1x,
+              ./images/work/work3/img@2x.jpg 2x,
+              ./images/work/work3/img@3x.jpg 3x,
+              "              
                 class="work__images"
-                src="./images/img1.3.jpg"
+                src="./images/work/work3/img.jpg"
                 alt="робота з планшетом"
                 width="370"
               />
@@ -193,7 +208,44 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="person">
-              <img src="./images/img2.1.jpg" alt="Фото мужчини" class="person__images" />
+              <picture>
+                <source              
+                srcset="
+                ./images/person1/Mobile/img.jpg 1x,
+                ./images/person1/Mobile/img@2x.jpg 2x,
+                ./images/person1/Mobile/img@3x.jpg 3x,
+                "
+                media="(max-width: 767px)">
+
+                <source              
+                srcset="
+                ./images/person1/Tablet/img.jpg 1x,
+                ./images/person1/Tablet/img@2x.jpg 2x,
+                ./images/person1/Tablet/img@3x.jpg 3x,
+                "
+                media="(max-width: 1199px)">
+
+                <source              
+                srcset="
+                ./images/person1/Desctop/img.jpg 1x,
+                ./images/person1/Desctop/img@2x.jpg 2x,
+                ./images/person1/Desctop/img@3x.jpg 3x,
+                "
+                media="(min-width: 1200px)">
+
+              <img 
+              srcset="
+              ./images/person1/Tablet/img.jpg 1x,
+              ./images/person1/Tablet/img@2x.jpg 2x,
+              ./images/person1/Tablet/img@3x.jpg 3x,
+              "
+
+              src="./images/person1/Tablet/img.jpg" 
+              alt="Фото чоловіка" 
+              class="person__images" 
+              />
+            </picture>
+
               <div class="person__container">
                 <h3 class="person__title">Игорь Демьяненко</h3>
                 <p class="person__text">Product Designer</p>
@@ -230,7 +282,43 @@
               </div>
             </li>
             <li class="person">
-              <img src="./images/img2.2.jpg" alt="Фото женшини" class="person__images" />
+              <picture>
+                <source              
+                srcset="
+                ./images/person2/Mobile/img.jpg 1x,
+                ./images/person2/Mobile/img@2x.jpg 2x,
+                ./images/person2/Mobile/img@3x.jpg 3x,
+                "
+                media="(max-width: 767px)">
+
+                <source              
+                srcset="
+                ./images/person2/Tablet/img.jpg 1x,
+                ./images/person2/Tablet/img@2x.jpg 2x,
+                ./images/person2/Tablet/img@3x.jpg 3x,
+                "
+                media="(max-width: 1199px)">
+
+                <source              
+                srcset="
+                ./images/person2/Desctop/img.jpg 1x,
+                ./images/person2/Desctop/img@2x.jpg 2x,
+                ./images/person2/Desctop/img@3x.jpg 3x,
+                "
+                media="(min-width: 1200px)">
+
+              <img 
+              srcset="
+              ./images/person2/Tablet/img.jpg 1x,
+              ./images/person2/Tablet/img@2x.jpg 2x,
+              ./images/person2/Tablet/img@3x.jpg 3x,
+              "
+
+              src="./images/person2/Tablet/img.jpg" 
+              alt="Фото чоловіка" 
+              class="person__images" 
+              />
+            </picture>
               <div class="person__container">
                 <h3 class="person__title">Ольга Репина</h3>
                 <p class="person__text">Frontend Developer</p>
@@ -267,7 +355,43 @@
               </div>
             </li>
             <li class="person">
-              <img src="./images/img2.3.jpg" alt="Фото мужчини" class="person__images" />
+              <picture>
+                <source              
+                srcset="
+                ./images/person3/Mobile/img.jpg 1x,
+                ./images/person3/Mobile/img@2x.jpg 2x,
+                ./images/person3/Mobile/img@3x.jpg 3x,
+                "
+                media="(max-width: 767px)">
+
+                <source              
+                srcset="
+                ./images/person3/Tablet/img.jpg 1x,
+                ./images/person3/Tablet/img@2x.jpg 2x,
+                ./images/person3/Tablet/img@3x.jpg 3x,
+                "
+                media="(max-width: 1199px)">
+
+                <source              
+                srcset="
+                ./images/person3/Desctop/img.jpg 1x,
+                ./images/person3/Desctop/img@2x.jpg 2x,
+                ./images/person3/Desctop/img@3x.jpg 3x,
+                "
+                media="(min-width: 1200px)">
+
+              <img 
+              srcset="
+              ./images/person3/Tablet/img.jpg 1x,
+              ./images/person3/Tablet/img@2x.jpg 2x,
+              ./images/person3/Tablet/img@3x.jpg 3x,
+              "
+
+              src="./images/person3/Tablet/img.jpg" 
+              alt="Фото чоловіка" 
+              class="person__images" 
+              />
+            </picture>
               <div class="person__container">
                 <h3 class="person__title">Николай Тарасов</h3>
                 <p class="person__text">Marketing</p>
@@ -304,7 +428,43 @@
               </div>
             </li>
             <li class="person">
-              <img src="./images/img2.4.jpg" alt="Фото мужчини" class="person__images" />
+              <picture>
+                <source              
+                srcset="
+                ./images/person4/Mobile/img.jpg 1x,
+                ./images/person4/Mobile/img@2x.jpg 2x,
+                ./images/person4/Mobile/img@3x.jpg 3x,
+                "
+                media="(max-width: 767px)">
+
+                <source              
+                srcset="
+                ./images/person4/Tablet/img.jpg 1x,
+                ./images/person4/Tablet/img@2x.jpg 2x,
+                ./images/person4/Tablet/img@3x.jpg 3x,
+                "
+                media="(max-width: 1199px)">
+
+                <source              
+                srcset="
+                ./images/person4/Desctop/img.jpg 1x,
+                ./images/person4/Desctop/img@2x.jpg 2x,
+                ./images/person4/Desctop/img@3x.jpg 3x,
+                "
+                media="(min-width: 1200px)">
+
+              <img 
+              srcset="
+              ./images/person4/Tablet/img.jpg 1x,
+              ./images/person4/Tablet/img@2x.jpg 2x,
+              ./images/person4/Tablet/img@3x.jpg 3x,
+              "
+
+              src="./images/person4/Tablet/img.jpg" 
+              alt="Фото чоловіка" 
+              class="person__images" 
+              />
+            </picture>
               <div class="person__container">
                 <h3 class="person__title">Михаил Ермаков</h3>
                 <p class="person__text">UI Designer</p>
@@ -387,7 +547,7 @@
 
 
 
-      <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="button__close" data-modal-close></button>
           <form class="form js-speaker-form" autocomplete="off">
@@ -453,11 +613,12 @@
           </form>
         </div>
       </div>
-    </main> -->
+    </main>
 
 
-    <footer class="hg=footer">
-      <!-- <div class="container container--display">
+    <footer class=" footer">
+      <div class="container container--display">
+        <div class="footer__tablet">
         <div class="footer__main-data">
           <a href="./" class="logo"
             >Web<span class="logo__white">Studio</span></a
@@ -507,6 +668,7 @@
             </li>
           </ul>
         </div>
+        </div>
         <div class="footerform">
           <h2 class="footerform__title">Подпишитесь на рассылку</h2>
           <form class="footerform__box">
@@ -521,7 +683,7 @@
             </button>
           </form>
         </div>
-      </div> -->
+      </div>
     </footer>
 
 

@@ -20,15 +20,27 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="header__container">
+      <div class="container header__container">
         <a href="./index.html" class="logo"
           >Web
           <span class="logo__black">Studio</span>
         </a>
         <nav>
-          <ul class="navi">
+
+
+          <button class="menu" type="button">
+            <svg width="40" height="40">
+              <use href = "./images/menu.svg#menu"></use>
+              <!-- <use class="color" href = "./images/menu.svg#close"></use> -->
+            </svg>
+          </button>
+
+
+          <ul class="navi navi--mobile">
             <li class="navi__item">
-              <a href="./index.html" class="navi__link">Студия</a>
+              <a href="./index.html" class="navi__link"
+                >Студия</a
+              >
             </li>
             <li class="navi__item">
               <a href="./portfolio.html" class="navi__link navi__link--active">Портфолио</a>
@@ -38,21 +50,21 @@
             </li>
           </ul>
         </nav>
-        <ul class="contaсts">
+
+
+        <ul class="contaсts contaсts--mobile">
           <li class="contaсts__item">
             <a href="" class="contaсts__link">
               <svg class="contaсts__icon">
                 <use href="./images/symbol-defs.svg#envelope"></use></svg>
-              info@devstudio.com</a
-            >
+              info@devstudio.com</a>
           </li>
           <li class="contaсts__item">
             <a href="" class="contaсts__link">
               <svg class="contaсts__icon">
                 <use href="./images/symbol-defs.svg#smartphone"></use>
               </svg>
-              +38 096 111 11 11</a
-            >
+              +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -81,36 +93,86 @@
             </li>
           </ul>
           <ul class="galery">
-            <li>
+            <li class="galery__card">
               <a href="" class="galery__link">
                 <div class="galery__img">
-                  <img
-                    src="./images/3.1.jpg"
-                    alt="компютер з фотками"
-                    width="370"
-                    class="galery__img--block"
+                  <picture>
+                    <source              
+                    srcset="
+                    ./images/galery/Galery1/Mobile/img.jpg 1x,
+                    ./images/galery/Galery1/Mobile/img@2x.jpg 2x,
+                    ./images/galery/Galery1/Mobile/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 767px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery1/Tablet/img.jpg 1x,
+                    ./images/galery/Galery1/Tablet/img@2x.jpg 2x,
+                    ./images/galery/Galery1/Tablet/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 1199px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery1/Desctop/img.jpg 1x,
+                    ./images/galery/Galery1/Desctop/img@2x.jpg 2x,
+                    ./images/galery/Galery1/Desctop/img@3x.jpg 3x,
+                    "
+                    media="(min-width: 1200px)">
+    
+                  <img 
+                  src="./images/galery/Galery1/Tablet/img.jpg" 
+                  alt="Два чоловіка граючих в баскетбол" 
+                  class="galery__img--block" 
                   />
+                </picture>
                   <p class="galery__img-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="galery__box">
+                <div class="galery__box galery__box--bottom">
                   <h2 class="galery__title">Технокряк</h2>
                   <p class="galery__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="galery__card">
               <a href="" class="galery__link">
                 <div class="galery__img">
-                  <img
-                    src="./images/3.2.jpg"
-                    alt="два баскетболиста"
-                    width="370"
-                    class="galery__img--block"
+                  <picture>
+                    <source              
+                    srcset="
+                    ./images/galery/Galery2/Mobile/img.jpg 1x,
+                    ./images/galery/Galery2/Mobile/img@2x.jpg 2x,
+                    ./images/galery/Galery2/Mobile/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 767px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery2/Tablet/img.jpg 1x,
+                    ./images/galery/Galery2/Tablet/img@2x.jpg 2x,
+                    ./images/galery/Galery2/Tablet/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 1199px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery2/Desctop/img.jpg 1x,
+                    ./images/galery/Galery2/Desctop/img@2x.jpg 2x,
+                    ./images/galery/Galery2/Desctop/img@3x.jpg 3x,
+                    "
+                    media="(min-width: 1200px)">
+    
+                  <img 
+                  src="./images/galery/Galery2/Tablet/img.jpg" 
+                  alt="Два чоловіка граючих в баскетбол" 
+                  class="galery__img--block" 
                   />
+                </picture>
                   <p class="galery__img-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -125,15 +187,40 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="galery__card">
               <a href="" class="galery__link">
                 <div class="galery__img">
-                  <img
-                    src="./images/3.3.jpg"
-                    alt="риба з надписом"
-                    width="370"
-                    class="galery__img--block"
+                  <picture>
+                    <source              
+                    srcset="
+                    ./images/galery/Galery3/Mobile/img.jpg 1x,
+                    ./images/galery/Galery3/Mobile/img@2x.jpg 2x,
+                    ./images/galery/Galery3/Mobile/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 767px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery3/Tablet/img.jpg 1x,
+                    ./images/galery/Galery3/Tablet/img@2x.jpg 2x,
+                    ./images/galery/Galery3/Tablet/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 1199px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery3/Desctop/img.jpg 1x,
+                    ./images/galery/Galery3/Desctop/img@2x.jpg 2x,
+                    ./images/galery/Galery3/Desctop/img@3x.jpg 3x,
+                    "
+                    media="(min-width: 1200px)">
+    
+                  <img 
+                  src="./images/galery/Galery3/Tablet/img.jpg" 
+                  alt="Риба" 
+                  class="galery__img--block" 
                   />
+                 </picture>
                   <p class="galery__img-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -146,15 +233,40 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="galery__card">
               <a href="" class="galery__link">
                 <div class="galery__img">
-                  <img
-                    src="./images/3.4.jpg"
-                    alt="наушники"
-                    width="370"
-                    class="galery__img--block"
+                  <picture>
+                    <source              
+                    srcset="
+                    ./images/galery/Galery4/Mobile/img.jpg 1x,
+                    ./images/galery/Galery4/Mobile/img@2x.jpg 2x,
+                    ./images/galery/Galery4/Mobile/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 767px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery4/Tablet/img.jpg 1x,
+                    ./images/galery/Galery4/Tablet/img@2x.jpg 2x,
+                    ./images/galery/Galery4/Tablet/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 1199px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery4/Desctop/img.jpg 1x,
+                    ./images/galery/Galery4/Desctop/img@2x.jpg 2x,
+                    ./images/galery/Galery4/Desctop/img@3x.jpg 3x,
+                    "
+                    media="(min-width: 1200px)">
+    
+                  <img 
+                  src="./images/galery/Galery4/Tablet/img.jpg" 
+                  alt="Чорні наушники" 
+                  class="galery__img--block" 
                   />
+                 </picture>
                   <p class="galery__img-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -167,15 +279,40 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="galery__card">
               <a href="" class="galery__link">
                 <div class="galery__img">
-                  <img
-                    src="./images/3.5.jpg"
-                    alt="дві коробки"
-                    width="370"
-                    class="galery__img--block"
+                  <picture>
+                    <source              
+                    srcset="
+                    ./images/galery/Galery5/Mobile/img.jpg 1x,
+                    ./images/galery/Galery5/Mobile/img@2x.jpg 2x,
+                    ./images/galery/Galery5/Mobile/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 767px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery5/Tablet/img.jpg 1x,
+                    ./images/galery/Galery5/Tablet/img@2x.jpg 2x,
+                    ./images/galery/Galery5/Tablet/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 1199px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery5/Desctop/img.jpg 1x,
+                    ./images/galery/Galery5/Desctop/img@2x.jpg 2x,
+                    ./images/galery/Galery5/Desctop/img@3x.jpg 3x,
+                    "
+                    media="(min-width: 1200px)">
+    
+                  <img 
+                  src="./images/galery/Galery5/Tablet/img.jpg" 
+                  alt="Дві коробки" 
+                  class="galery__img--block" 
                   />
+                 </picture>
                   <p class="galery__img-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -188,15 +325,40 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="galery__card">
               <a href="" class="galery__link">
                 <div class="galery__img">
-                  <img
-                    src="./images/3.6.jpg"
-                    alt="компютер з картою світу"
-                    width="370"
-                    class="galery__img--block"
+                  <picture>
+                    <source              
+                    srcset="
+                    ./images/galery/Galery6/Mobile/img.jpg 1x,
+                    ./images/galery/Galery6/Mobile/img@2x.jpg 2x,
+                    ./images/galery/Galery6/Mobile/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 767px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery6/Tablet/img.jpg 1x,
+                    ./images/galery/Galery6/Tablet/img@2x.jpg 2x,
+                    ./images/galery/Galery6/Tablet/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 1199px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery6/Desctop/img.jpg 1x,
+                    ./images/galery/Galery6/Desctop/img@2x.jpg 2x,
+                    ./images/galery/Galery6/Desctop/img@3x.jpg 3x,
+                    "
+                    media="(min-width: 1200px)">
+    
+                  <img 
+                  src="./images/galery/Galery6/Tablet/img.jpg" 
+                  alt="Екран із статистикою" 
+                  class="galery__img--block" 
                   />
+                 </picture>
                   <p class="galery__img-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -209,15 +371,40 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="galery__card">
               <a href="" class="galery__link">
                 <div class="galery__img">
-                  <img
-                    src="./images/3.7.jpg"
-                    alt="книга"
-                    width="370"
-                    class="galery__img--block"
+                  <picture>
+                    <source              
+                    srcset="
+                    ./images/galery/Galery7/Mobile/img.jpg 1x,
+                    ./images/galery/Galery7/Mobile/img@2x.jpg 2x,
+                    ./images/galery/Galery7/Mobile/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 767px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery7/Tablet/img.jpg 1x,
+                    ./images/galery/Galery7/Tablet/img@2x.jpg 2x,
+                    ./images/galery/Galery7/Tablet/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 1199px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery7/Desctop/img.jpg 1x,
+                    ./images/galery/Galery7/Desctop/img@2x.jpg 2x,
+                    ./images/galery/Galery7/Desctop/img@3x.jpg 3x,
+                    "
+                    media="(min-width: 1200px)">
+    
+                  <img 
+                  src="./images/galery/Galery7/Tablet/img.jpg" 
+                  alt="Журнал" 
+                  class="galery__img--block" 
                   />
+                 </picture>
                   <p class="galery__img-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -230,15 +417,40 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="galery__card">
               <a href="" class="galery__link">
                 <div class="galery__img">
-                  <img
-                    src="./images/3.8.jpg"
-                    alt="карточка"
-                    width="370"
-                    class="galery__img--block"
+                  <picture>
+                    <source              
+                    srcset="
+                    ./images/galery/Galery8/Mobile/img.jpg 1x,
+                    ./images/galery/Galery8/Mobile/img@2x.jpg 2x,
+                    ./images/galery/Galery8/Mobile/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 767px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery8/Tablet/img.jpg 1x,
+                    ./images/galery/Galery8/Tablet/img@2x.jpg 2x,
+                    ./images/galery/Galery8/Tablet/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 1199px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery8/Desctop/img.jpg 1x,
+                    ./images/galery/Galery8/Desctop/img@2x.jpg 2x,
+                    ./images/galery/Galery8/Desctop/img@3x.jpg 3x,
+                    "
+                    media="(min-width: 1200px)">
+    
+                  <img 
+                  src="./images/galery/Galery8/Tablet/img.jpg" 
+                  alt="Етикєтка" 
+                  class="galery__img--block" 
                   />
+                  </picture>
                   <p class="galery__img-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -251,15 +463,40 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="galery__card">
               <a href="" class="galery__link">
                 <div class="galery__img">
-                  <img
-                    src="./images/3.9.jpg"
-                    alt="людина при компютері"
-                    width="370"
-                    class="galery__img--block"
+                  <picture>
+                    <source              
+                    srcset="
+                    ./images/galery/Galery9/Mobile/img.jpg 1x,
+                    ./images/galery/Galery9/Mobile/img@2x.jpg 2x,
+                    ./images/galery/Galery9/Mobile/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 767px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery9/Tablet/img.jpg 1x,
+                    ./images/galery/Galery9/Tablet/img@2x.jpg 2x,
+                    ./images/galery/Galery9/Tablet/img@3x.jpg 3x,
+                    "
+                    media="(max-width: 1199px)">
+    
+                    <source              
+                    srcset="
+                    ./images/galery/Galery9/Desctop/img.jpg 1x,
+                    ./images/galery/Galery9/Desctop/img@2x.jpg 2x,
+                    ./images/galery/Galery9/Desctop/img@3x.jpg 3x,
+                    "
+                    media="(min-width: 1200px)">
+    
+                  <img 
+                  src="./images/galery/Galery9/Tablet/img.jpg" 
+                  alt="Праця при компютері" 
+                  class="galery__img--block" 
                   />
+                  </picture>
                   <p class="galery__img-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -276,8 +513,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class=" footer">
       <div class="container container--display">
+        <div class="footer__tablet">
         <div class="footer__main-data">
           <a href="./" class="logo"
             >Web<span class="logo__white">Studio</span></a
@@ -308,28 +546,25 @@
             <li class="company-link__item">
               <a href="" class="company-link__ref"
                 ><svg class="company-link__icon">
-                  <use href="./images/symbol-defs.svg#instagram"></use></svg>
-              </a>
+                  <use href="./images/symbol-defs.svg#instagram"></use></svg></a>
             </li>
             <li class="company-link__item">
               <a href="" class="company-link__ref"
                 ><svg class="company-link__icon">
-                  <use href="./images/symbol-defs.svg#twitter"></use></svg>
-              </a>
+                  <use href="./images/symbol-defs.svg#twitter"></use></svg></a>
             </li>
             <li class="company-link__item">
               <a href="" class="company-link__ref"
                 ><svg class="company-link__icon">
-                  <use href="./images/symbol-defs.svg#facebook"></use></svg>
-              </a>
+                  <use href="./images/symbol-defs.svg#facebook"></use></svg></a>
             </li>
             <li class="company-link__item">
               <a href="" class="company-link__ref"
                 ><svg class="company-link__icon">
-                  <use href="./images/symbol-defs.svg#linkedin"></use></svg>
-              </a>
+                  <use href="./images/symbol-defs.svg#linkedin"></use></svg></a>
             </li>
           </ul>
+        </div>
         </div>
         <div class="footerform">
           <h2 class="footerform__title">Подпишитесь на рассылку</h2>
@@ -340,7 +575,6 @@
               placeholder="E-mail"
               class="foterform__input"
             />
-            <!-- <label for="mail" class="FooterForm-text">E-mail</label> -->
             <button type="submit" class="footerform__button">
               Подписаться
             </button>
