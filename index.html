@@ -30,18 +30,27 @@
           >Web
           <span class="logo__black">Studio</span>
         </a>
-        <nav>
+
+        <button class="menu" type="button">
+          <svg width="40" height="40">
+            <use href = "./images/menu.svg#menu"></use>
+            <!-- <use class="color" href = "./images/menu.svg#close"></use> -->
+          </svg>
+        </button>
+
+        <nav class="mobile is-open">
+          <div class="header-nav">
+
+        <button class="menu menu--close" type="button">
+          <svg width="40" height="40">
+            <use href = "./images/menu.svg#close"></use>
+            <!-- <use class="color" href = "./images/menu.svg#close"></use> -->
+          </svg>
+        </button>
 
 
-          <button class="menu" type="button">
-            <svg width="40" height="40">
-              <use href = "./images/menu.svg#menu"></use>
-              <!-- <use class="color" href = "./images/menu.svg#close"></use> -->
-            </svg>
-          </button>
 
-
-          <ul class="navi navi--mobile">
+          <ul class="navi">
             <li class="navi__item">
               <a href="./index.html" class="navi__link navi__link--active"
                 >Студия</a
@@ -54,10 +63,9 @@
               <a href="" class="navi__link">Контакты</a>
             </li>
           </ul>
-        </nav>
 
 
-        <ul class="contaсts contaсts--mobile">
+        <ul class="contaсts">
           <li class="contaсts__item">
             <a href="" class="contaсts__link">
               <svg class="contaсts__icon">
@@ -72,6 +80,8 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+      </div>
+      </nav>
       </div>
     </header>
     <main>
