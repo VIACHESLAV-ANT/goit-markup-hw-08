@@ -33,7 +33,7 @@
   background-color: white;
   margin: 10px 0px;
   position: absolute;
-  right: 0;
+  right: 15px;
   top: 0;
 }
 
@@ -48,13 +48,12 @@
     left: 0;
     top: 0;
     background-color: #FFFFFF;
-    height: 100%;
     width: 100%;
     text-align: left;
     padding-left: 40px;
     padding-top: 48px;
-    align-content: space-between;
     overflow-y: scroll;
+    height: 796px;
   }
 }
 
