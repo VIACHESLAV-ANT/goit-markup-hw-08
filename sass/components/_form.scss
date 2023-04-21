@@ -8,6 +8,7 @@
 
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -20,8 +21,19 @@
 }
 
 .modal {
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 100%;
+  @media screen and (max-width:480px){
+    padding-left: 30px;
+  }
+  @media screen and (min-width:480px){
+  min-width: 450px;
+  min-height: 609px;
+  }
+  @media screen and (min-width:1200px){
+    min-width: 528px;
+    min-height: 581px;
+  }
+
   background-color: var(--white-color);
 
   position: absolute;
@@ -136,6 +148,9 @@ textarea {
   align-items: center;
   color: var(--second-text-color);
   cursor: pointer;
+  @media screen and (max-width:1199px){
+  font-size: 12px;
+  }
 }
 
 .form__buton {
@@ -202,6 +217,7 @@ textarea {
   border-radius: 2px;
   margin-right: 8px;
   /* margin-right: 8px; */
+  
 }
 
 .checkbox:checked + .icon {

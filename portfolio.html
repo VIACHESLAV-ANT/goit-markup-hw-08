@@ -25,18 +25,25 @@
           >Web
           <span class="logo__black">Studio</span>
         </a>
-        <nav>
+
+        <button class="menu" type="button" aria-expanded="false" aria-controls="mobile" data-menu-button>
+          <svg width="40" height="40">
+            <use href = "./images/menu.svg#menu"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile" aria-expanded="false" data-menu>
+          <div class="header-nav">
+
+        <button class="menu menu--close" type="button" aria-expanded="false" aria-controls="mobile" data-menu-button>
+          <svg width="40" height="40">
+            <use href = "./images/menu.svg#close"></use>
+          </svg>
+        </button>
 
 
-          <button class="menu" type="button">
-            <svg width="40" height="40">
-              <use href = "./images/menu.svg#menu"></use>
-              <!-- <use class="color" href = "./images/menu.svg#close"></use> -->
-            </svg>
-          </button>
 
-
-          <ul class="navi navi--mobile">
+          <ul class="navi">
             <li class="navi__item">
               <a href="./index.html" class="navi__link"
                 >Студия</a
@@ -49,10 +56,9 @@
               <a href="" class="navi__link">Контакты</a>
             </li>
           </ul>
-        </nav>
 
 
-        <ul class="contaсts contaсts--mobile">
+        <ul class="contaсts">
           <li class="contaсts__item">
             <a href="" class="contaсts__link">
               <svg class="contaсts__icon">
@@ -67,6 +73,8 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+      </div>
+      </nav>
       </div>
     </header>
     <main>
@@ -513,6 +521,35 @@
         </div>
       </section>
     </main>
+    <script>
+      (() => {
+      
+          const menuBtnRef = document.querySelector("[data-menu-button]");
+        
+          const mobileMenuRef = document.querySelector("[data-menu]");
+        
+        
+        
+          menuBtnRef.addEventListener("click", () => {
+        
+            const expanded =
+        
+            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+        
+        
+        
+            menuBtnRef.classList.toggle("is-open");
+        
+            menuBtnRef.setAttribute("aria-expanded", !expanded);
+        
+        
+        
+            mobileMenuRef.classList.toggle("is-open");
+        
+          });
+        
+        })();
+      </script>
     <footer class=" footer">
       <div class="container container--display">
         <div class="footer__tablet">

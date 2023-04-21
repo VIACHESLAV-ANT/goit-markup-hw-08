@@ -1,4 +1,5 @@
 .menu{
+  fill: black;
   @media screen and (max-width: 768px) {
   display: block;
   border: 0;
@@ -18,6 +19,10 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  }
+
+  &:hover, &:focus{
+    fill: var(--acent-color);
   }
 }
 
@@ -49,6 +54,7 @@
     padding-left: 40px;
     padding-top: 48px;
     align-content: space-between;
+    overflow-y: scroll;
   }
 }
 
