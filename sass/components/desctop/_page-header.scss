@@ -1,13 +1,12 @@
 @media screen and (min-width: 1200px) {
-
-    .contacts{
+    .contaсts{
         display: flex;
         margin-top: auto;
         margin-bottom: auto;
     }
 
-    .contacts__item:not(:last-child) {
-        margin-right: 50px;
+    .contaсts__item:not(:last-child) {
+        margin-right: 30px;
     }
 
     .contaсts__link {
