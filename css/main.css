@@ -781,7 +781,6 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     padding-top: 26px;
-    padding-bottom: 26px;
   }
 }
 
@@ -1134,7 +1133,7 @@ textarea {
   color: var(--acent-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contaсts__icon {
     display: none;
   }
@@ -1658,8 +1657,6 @@ textarea {
     margin-right: 30px;
   }
   .contaсts__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
     font-size: 14px;
   }
   .contaсts__icon {
