@@ -10,6 +10,11 @@
   letter-spacing: 0.03em;
   @media screen and (min-width: 1200px) {
     font-size: 26px;
+    margin-right: 93px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width:1200px) {
+      margin-right: 88px;
     }
   .header__container & {
       padding-top: 16px;
@@ -18,6 +23,7 @@
     display: flex;
     padding-top: 26px;
     padding-bottom: 26px;
+    
   }
 }
 }
@@ -25,12 +31,6 @@
 .logo__black {
   color: var(--logo-color);
   margin-left: 0px;
-  @media screen and (min-width: 768px) {
-    margin-right: 88px;
-    }
-  @media screen and (min-width: 1200px) {
-  margin-right: 93px;
-  }
 }
 
 .logo__white {

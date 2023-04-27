@@ -15,6 +15,11 @@ a {
   margin: 0;
   padding: 0;
 }
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 body {
   color: var(--primary-text-color);
   background-color: var(--white-color);
